@@ -512,5 +512,6 @@ label_crear.pack(side="left", padx=10)
 label_crear.bind("<Button-1>", lambda e: crear_usuario())
 label_crear.bind("<Enter>", lambda e: label_crear.config(fg=dorado_oscuro))
 label_crear.bind("<Leave>", lambda e: label_crear.config(fg=color_link))
+ventana.bind("<Return>", lambda event: verificar_login())
 
 ventana.mainloop()
